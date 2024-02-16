@@ -143,16 +143,34 @@
     border-radius: 3px;
 }
 
+/* header */
 @media screen and (max-width: 576px){
     .header__container {
-        display: flex;
         flex-direction: column !important;
         height: auto;
     }
-    .lower__container ul li:not(:first-child) {
-        display: none;
-    }    
+    .search input {
+        width: 80%; 
+    }
     .language {
         display: none;
     }
+    .order__container {
+        max-width: 100%; 
+        justify-content: space-around; 
+    }
+    .order__container p {
+        font-size: 8px; 
+    }
 }
+
+/* lowerHeader */
+@media screen and (max-width: 576px){
+    .lower__container li {
+        padding: 5px; 
+    }
+    .lower__container ul li:first-child {
+        gap: 5px; 
+    }
+}
+
